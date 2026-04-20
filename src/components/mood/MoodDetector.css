@@ -1,0 +1,83 @@
+.mood-detector {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.mood-detector-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.mood-detector-header h4 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: color-mix(in oklab, var(--text), transparent 50%);
+  cursor: pointer;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  transition: all 0.2s;
+}
+
+.close-btn:hover {
+  background: color-mix(in oklab, var(--text), transparent 90%);
+  color: var(--text);
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4/3;
+  background: #000;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.video-feed {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.loading-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-weight: 500;
+  z-index: 10;
+}
+
+.loading-overlay.transparent {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.mood-detector-error {
+  padding: 1rem;
+  background: color-mix(in oklab, var(--accent-600), transparent 90%);
+  color: var(--accent-600);
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  text-align: center;
+}
