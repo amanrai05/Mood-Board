@@ -1,8 +1,9 @@
 ```markdown
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/shirsakm/moodboard/refs/heads/dev/public/logo.png" width="80" />
+<img src="./banner.svg" width="100%" alt="MoodBoard banner"/>
 
+</div>
 # MoodBoard
 
 **Your daily mood companion — private, self-hosted, AI-powered.**
