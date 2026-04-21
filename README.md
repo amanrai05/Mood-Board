@@ -1,7 +1,7 @@
 ```markdown
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/amanrai05/Mood-Board/main/banner.svg" width="100%" alt="MoodBoard banner"/>
+<img src="https://github.com/amanrai05/Mood-Board/blob/main/banner.svg?raw=true"
 
 # MoodBoard
 
