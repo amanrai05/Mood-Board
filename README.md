@@ -15,7 +15,6 @@
 
 </div>
 
-
 ## ✨ What is MoodBoard?
 
 MoodBoard is a **privacy-first, open-source mood tracker and daily journal** you can self-host in minutes. No ads. No subscriptions. No data mining. Just you and your data — on your own server.
