@@ -1,7 +1,87 @@
 ```markdown
 <div align="center">
 
+<div align="center">
+
 <img src="https://github.com/amanrai05/Mood-Board/blob/main/banner.svg?raw=true"
+
+# MoodBoard
+
+**Your daily mood companion — private, self-hosted, AI-powered.**
+
+[![License](https://img.shields.io/github/license/amanrai05/Mood-Board?style=flat-square&color=7c3aed)](https://github.com/amanrai05/Mood-Board/blob/main/LICENSE)
+[![Stars](https://img.shields.io/github/stars/amanrai05/Mood-Board?style=flat-square&color=7c3aed)](https://github.com/amanrai05/Mood-Board/stargazers)
+[![Last Commit](https://img.shields.io/github/last-commit/amanrai05/Mood-Board?style=flat-square&color=7c3aed)](https://github.com/amanrai05/Mood-Board/commits/main)
+[![React](https://img.shields.io/badge/React-19-7c3aed?style=flat-square)](https://react.dev)
+[![Flask](https://img.shields.io/badge/Flask-Python-7c3aed?style=flat-square)](https://flask.palletsprojects.com)
+
+<br/>
+
+> Track your mood. Journal your thoughts. Let AI do the rest.
+
+</div>
+
+---
+
+## ✨ What is MoodBoard?
+
+MoodBoard is a **privacy-first, open-source mood tracker and daily journal** you can self-host in minutes. No ads. No subscriptions. No data mining. Just you and your data — on your own server.
+
+Inspired by Daylio. Built for people who care about their mental wellness *and* their privacy.
+
+---
+
+## 🚀 Features
+
+### Core
+
+| | Feature | Description |
+|---|---|---|
+| 📊 | **Mood Tracking** | Log daily mood on a 5-point scale with customizable tags |
+| 📝 | **Rich Journaling** | Full Markdown support in every entry |
+| 📅 | **Analytics** | Calendar view, mood trends, streaks & stats |
+| 🎯 | **Goals** | Set personal goals and track progress |
+| 🏆 | **Achievements** | Gamified milestones to keep you consistent |
+| 🔒 | **Privacy First** | Local SQLite only — zero telemetry, zero tracking |
+| 🐳 | **Docker Ready** | One command and you're live |
+
+---
+
+### 🤖 AI Features
+
+<div align="center">
+
+| 🎭 Auto-Detect | 🎵 Spotify Match | 🧠 AI Therapist | 🎙️ Voice Entry |
+|:---:|:---:|:---:|:---:|
+| Camera reads your facial expression and auto-logs your current mood — no manual input needed | Recommends a Spotify playlist that perfectly matches your mood the moment you log it | Personalized mental wellness suggestions and compassionate responses based on how you feel | Speak your thoughts out loud — voice transcribed to text so you can journal completely hands-free |
+
+</div>
+
+---
+
+## 📸 Preview
+
+![MoodBoard Dashboard](https://raw.githubusercontent.com/amanrai05/Mood-Board/main/public/screenshot.png)
+
+---
+
+## ⚡ Quick Start
+
+> Runs in single-user mode by default. Enable Google OAuth for multi-user support.
+
+```bash
+# 1. Clone
+git clone https://github.com/amanrai05/Mood-Board.git
+cd Mood-Board
+
+# 2. Create config
+cp .env.docker .env
+
+# 3. Set secrets — open .env, update SECRET_KEY and JWT_SECRET
+nano .env
+
+# 4. Launch
+docker compose up -d
 
 # MoodBoard
 
