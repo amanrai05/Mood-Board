@@ -1,9 +1,5 @@
-```markdown
 <div align="center">
-
-<div align="center">
-
-<img src="https://github.com/amanrai05/Mood-Board/blob/main/banner.svg?raw=true"
+<img src="https://raw.githubusercontent.com/amanrai05/Mood-Board/main/banner.svg" width="100%"/>
 
 # MoodBoard
 
@@ -15,13 +11,10 @@
 [![React](https://img.shields.io/badge/React-19-7c3aed?style=flat-square)](https://react.dev)
 [![Flask](https://img.shields.io/badge/Flask-Python-7c3aed?style=flat-square)](https://flask.palletsprojects.com)
 
-<br/>
-
 > Track your mood. Journal your thoughts. Let AI do the rest.
 
 </div>
 
----
 
 ## ✨ What is MoodBoard?
 
