@@ -1,9 +1,8 @@
 ```markdown
 <div align="center">
 
-<img src="./banner.svg" width="100%" alt="MoodBoard banner"/>
+<img src="https://raw.githubusercontent.com/amanrai05/Mood-Board/main/banner.svg" width="100%" alt="MoodBoard banner"/>
 
-</div>
 # MoodBoard
 
 **Your daily mood companion — private, self-hosted, AI-powered.**
@@ -17,8 +16,6 @@
 <br/>
 
 > Track your mood. Journal your thoughts. Let AI do the rest.
-
-<br/>
 
 </div>
 
@@ -50,31 +47,25 @@ Inspired by Daylio. Built for people who care about their mental wellness *and* 
 
 ### 🤖 AI Features
 
-<br/>
-
 <div align="center">
 
 | 🎭 Auto-Detect | 🎵 Spotify Match | 🧠 AI Therapist | 🎙️ Voice Entry |
 |:---:|:---:|:---:|:---:|
-| Camera reads your facial expression and auto-logs your current mood — no manual input needed | Recommends a Spotify playlist that perfectly matches your mood the moment you log it | Get personalized mental wellness suggestions and compassionate responses based on how you feel | Speak your thoughts out loud — voice is transcribed to text so you can journal completely hands-free |
+| Camera reads your facial expression and auto-logs your current mood — no manual input needed | Recommends a Spotify playlist that perfectly matches your mood the moment you log it | Personalized mental wellness suggestions and compassionate responses based on how you feel | Speak your thoughts out loud — voice transcribed to text so you can journal completely hands-free |
 
 </div>
-
-<br/>
 
 ---
 
 ## 📸 Preview
 
-> Dashboard — AI features visible at the top: Auto-Detect · Spotify Match · AI Therapist · Voice Entry
-
-![MoodBoard Dashboard](./public/screenshot.png)
+![MoodBoard Dashboard](https://raw.githubusercontent.com/amanrai05/Mood-Board/main/public/screenshot.png)
 
 ---
 
 ## ⚡ Quick Start
 
-> **Note:** Runs in single-user mode by default. Enable Google OAuth for multi-user support.
+> Runs in single-user mode by default. Enable Google OAuth for multi-user support.
 
 ```bash
 # 1. Clone
@@ -84,14 +75,14 @@ cd Mood-Board
 # 2. Create config
 cp .env.docker .env
 
-# 3. Set your secrets (open .env → update SECRET_KEY and JWT_SECRET)
+# 3. Set secrets — open .env, update SECRET_KEY and JWT_SECRET
 nano .env
 
 # 4. Launch
 docker compose up -d
 ```
 
-> App live at **http://localhost:5173** 🎉
+App live at **http://localhost:5173**
 
 ---
 
@@ -102,12 +93,12 @@ docker compose up -d
 ```bash
 # Frontend
 npm install
-npm run dev                        # → http://localhost:5173
+npm run dev                         # → http://localhost:5173
 
 # Backend (new terminal)
 cd api
 python -m venv venv
-source venv/bin/activate           # Windows: venv\Scripts\activate
+source venv/bin/activate            # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 cd ..
 npm run api:dev
@@ -206,14 +197,13 @@ cp .env.docker .env
 docker compose -f docker-compose.prod.yml up -d
 ```
 
-Place TLS certs in `./ssl/` → `fullchain.pem` + `privkey.pem`
-Nginx serves on ports **80** and **443**
+Place certs in `./ssl/` → `fullchain.pem` + `privkey.pem`. Nginx on ports **80** and **443**.
 
 ---
 
 ## 🤝 Contributing
 
-PRs are welcome! For major changes, open an issue first.
+PRs welcome. Open an issue first for major changes.
 
 ```bash
 npm test    # runs backend tests via pytest
@@ -226,4 +216,4 @@ npm test    # runs backend tests via pytest
 [AGPL-3.0](https://github.com/amanrai05/Mood-Board/blob/main/LICENSE) · Made with 🌙 by [amanrai05](https://github.com/amanrai05)
 ```
 
-Copy all → paste into `README.md` → commit. Done.
+Copy all → paste into GitHub README editor → commit. Banner loads from `raw.githubusercontent.com` so animation works instantly.
