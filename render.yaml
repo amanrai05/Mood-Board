@@ -1,0 +1,38 @@
+services:
+  - type: web
+    name: moodboard-api
+    env: python
+    rootDir: api
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn --bind 0.0.0.0:$PORT --workers 4 wsgi:application
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: RAILWAY_ENVIRONMENT
+        value: production
+      - key: CORS_ORIGINS
+        value: '*'
+      - key: DATABASE_PATH
+        value: /data/moodboard.db
+    disk:
+      name: moodboard-data
+      mountPath: /data
+      sizeGB: 1
+
+  - type: web
+    name: moodboard-web
+    env: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    envVars:
+      - key: NODE_VERSION
+        value: 20.0.0
+      - key: VITE_API_URL
+        fromService:
+          type: web
+          name: moodboard-api
+          envVarKey: RENDER_EXTERNAL_URL
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
