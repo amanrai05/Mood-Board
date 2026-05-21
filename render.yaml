@@ -2,6 +2,7 @@ services:
   - type: web
     name: moodboard-api
     env: python
+    plan: free
     rootDir: api
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn --bind 0.0.0.0:$PORT --workers 4 wsgi:application
@@ -13,15 +14,12 @@ services:
       - key: CORS_ORIGINS
         value: '*'
       - key: DATABASE_PATH
-        value: /data/moodboard.db
-    disk:
-      name: moodboard-data
-      mountPath: /data
-      sizeGB: 1
+        value: moodboard.db
 
   - type: web
     name: moodboard-web
     env: static
+    plan: free
     buildCommand: npm install && npm run build
     staticPublishPath: dist
     envVars:
