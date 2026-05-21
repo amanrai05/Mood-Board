@@ -23,7 +23,7 @@ services:
     staticPublishPath: dist
     envVars:
       - key: NODE_VERSION
-        value: 20.0.0
+        value: 20
       - key: VITE_API_URL
         fromService:
           type: web
