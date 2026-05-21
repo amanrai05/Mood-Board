@@ -1,0 +1,4 @@
+/* Intentionally minimal to avoid overriding global styles in App.css */
+/* Mood grid and button visuals are defined in src/App.css under .mood-grid and .mood-button. */
+/* Keep only safe layout tweaks if needed. */
+/* Currently no overrides. */
